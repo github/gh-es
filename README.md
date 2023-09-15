@@ -22,4 +22,4 @@ gh extension install github.com/github/gh-es --pin v3.11.0
 
 ## Usage
 
-For more information on how to use the CLI and it's commands, please see the [usage](./USAGE.md) documentation.
+For more information on how to use the CLI and its commands, please see the [usage](./USAGE.md) documentation.
