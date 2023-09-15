@@ -164,7 +164,7 @@ Configures the CLI to be able to connect with the GitHub Enterprise Manage API a
 <dd>Type of authentication to use: {root site administrator|Management Console user account|internal API key}</dd>
 
 <dt><code>-a</code>, <code>--auto</code></dt>
-<dd>Use to auto-configure when running locally on the GHES appliance (using internal API key authentication only)</dd>
+<dd>Use to auto-configure when running locally on the GHES instance (using internal API key authentication only)</dd>
 
 <dt><code>-n</code>, <code>--hostname &lt;string&gt;</code></dt>
 <dd>GHES instance hostname</dd>
@@ -312,7 +312,7 @@ Enable or disable maintenance mode on all configured nodes
 gh es ping
 ```
 
-Ping the appliance
+Ping the instance
 
 ### Options inherited from parent commands
 
@@ -496,7 +496,7 @@ Get or set topology configuration
 * [es]
 ## gh es
 
-A GitHub CLI extension to manage your GHES appliance 
+A GitHub CLI extension to manage your GHES instance 
 
 ### Options
 
