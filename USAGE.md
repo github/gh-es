@@ -35,7 +35,7 @@ In the case that the CLI is currently configured using the root site administrat
 * [es access]
 ## gh es access
 
-Manage access to all configured GHES nodes
+Manage access to all configured GHES nodes.
 
 ### Options inherited from parent commands
 
@@ -55,7 +55,7 @@ Manage access to all configured GHES nodes
 gh es cluster status [flags]
 ```
 
-Get the status of services running on each cluster node
+Get the status of services running on each cluster node.
 
 ### Options
 
@@ -86,7 +86,7 @@ Get the status of services running on each cluster node
 * [es cluster]
 ## gh es cluster
 
-Perform operations on GHES cluster
+Perform operations on a GHES cluster.
 
 ### Options inherited from parent commands
 
@@ -106,7 +106,7 @@ Perform operations on GHES cluster
 gh es config metadata [flags]
 ```
 
-Get GHES metadata of all configured nodes
+Get GHES metadata for all configured nodes.
 
 ### Options
 
@@ -134,7 +134,7 @@ Get GHES metadata of all configured nodes
 * [es config]
 ## gh es config
 
-Get GHES configuration information of all configured nodes
+Get GHES configuration information for all configured nodes.
 
 ### Options inherited from parent commands
 
@@ -219,7 +219,7 @@ Simply type es help [path to command] for full details.
 gh es maintenance get [flags]
 ```
 
-Check maintenance status on all configured nodes
+Check maintenance status on all configured nodes.
 
 ### Options
 
@@ -251,7 +251,7 @@ Check maintenance status on all configured nodes
 gh es maintenance set [flags]
 ```
 
-Configure the maintenance mode on all configured nodes, including setting an IP Exception List, enabling on a scheduled time in the future and providing a custom maintenance mode message.
+Configure the maintenance mode on all configured nodes, including setting an IP exception list, enabling on a scheduled time in the future and providing a custom maintenance mode message.
 
 ### Options
 
@@ -292,7 +292,7 @@ Configure the maintenance mode on all configured nodes, including setting an IP 
 gh es maintenance
 ```
 
-Enable or disable maintenance mode on all configured nodes
+Enable or disable maintenance mode on all configured nodes.
 
 ### Options inherited from parent commands
 
@@ -332,7 +332,7 @@ Ping the instance
 gh es release version [flags]
 ```
 
-Get GHES version of all configured nodes
+Get GHES version for all configured nodes.
 
 ### Options
 
@@ -360,7 +360,7 @@ Get GHES version of all configured nodes
 * [es release]
 ## gh es release
 
-Get GHES release information of all configured nodes
+Get GHES release information for all configured nodes.
 
 ### Options inherited from parent commands
 
@@ -380,7 +380,7 @@ Get GHES release information of all configured nodes
 gh es replication status [flags]
 ```
 
-Show replication status for each replication channel to the primary
+Show replication status for each replication channel to the primary.
 
 ### Options
 
@@ -411,7 +411,7 @@ Show replication status for each replication channel to the primary
 * [es replication]
 ## gh es replication
 
-Perform operations on GHES replication
+Perform operations related to GHES replication.
 
 ### Options inherited from parent commands
 
@@ -431,7 +431,7 @@ Perform operations on GHES replication
 gh es topologyconfig get
 ```
 
-Get topology configuration from GHES instance in INI-style
+Get topology configuration from the GHES instance in INI style.
 
 ### Options inherited from parent commands
 
@@ -451,7 +451,7 @@ Get topology configuration from GHES instance in INI-style
 gh es topologyconfig set [flags]
 ```
 
-Set GHES topology configuration by providing an INI-style configuration string
+Set GHES topology configuration by providing an INI-style configuration string.
 
 ### Options
 
@@ -480,7 +480,7 @@ Set GHES topology configuration by providing an INI-style configuration string
 gh es topologyconfig
 ```
 
-Get or set topology configuration
+Get or set topology configuration.
 
 ### Options inherited from parent commands
 
@@ -496,7 +496,7 @@ Get or set topology configuration
 * [es]
 ## gh es
 
-A GitHub CLI extension to manage your GHES instance 
+A GitHub CLI extension to manage your GHES instance.
 
 ### Options
 
