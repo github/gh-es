@@ -6,7 +6,7 @@
 gh es access set-password [flags]
 ```
 
-Update GHES root site admin password which is also used for access to the Management Console.
+Update GHES root site administrator password which is also used for access to the Management Console.
 In the case that the CLI is currently configured using the root site administrator, the stored authentication parameters need to be updated by running the `configure` command.
 
 ### Options
