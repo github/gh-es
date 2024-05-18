@@ -486,6 +486,9 @@ Import a new license. This does not immediately apply the license to the GitHub 
 
 
 <dl class="flags">
+<dt><code>-a</code>, <code>--apply</code></dt>
+<dd>Wheter the license import command will rebuild the github application and apply the new license</dd>
+
 <dt><code>-l</code>, <code>--license &lt;string&gt;</code></dt>
 <dd>Path to license file</dd>
 </dl>
@@ -503,10 +506,19 @@ Import a new license. This does not immediately apply the license to the GitHub 
 ## gh es config get-settings
 
 ```
-gh es config get-settings
+gh es config get-settings [flags]
 ```
 
 Get current settings of the GitHub Enterprise Server instance, which are ready to be applied.
+
+### Options
+
+
+<dl class="flags">
+<dt><code>-t</code>, <code>--target-hostname &lt;string&gt;</code></dt>
+<dd>(Optional) Run on node with specific hostname. Default to the cluster delegate.</dd>
+</dl>
+
 
 ### Options inherited from parent commands
 
@@ -531,6 +543,9 @@ Update a subset or all of GHES settings in preparation to applying them.
 <dl class="flags">
 <dt><code>-s</code>, <code>--settings &lt;string&gt;</code></dt>
 <dd>Provide updated settings as JSON string</dd>
+
+<dt><code>-t</code>, <code>--target-hostname &lt;string&gt;</code></dt>
+<dd>(Optional) Run on node with specific hostname. Default to the cluster delegate.</dd>
 </dl>
 
 
@@ -739,14 +754,14 @@ Get topology configuration from the GHES instance in INI style.
 gh es topologyconfig set [flags]
 ```
 
-Set GHES topology configuration by providing an INI-style configuration string. This command will apply the configuration by uploading it to the running management service.
+Set GHES topology configuration by providing a path to the cluster configuration file. This command will store the uploaded configuration in the configuration management service.
 
 ### Options
 
 
 <dl class="flags">
 <dt><code>-c</code>, <code>--config &lt;string&gt;</code></dt>
-<dd>Configure topology by providing string in INI-style</dd>
+<dd>path to the cluster configuration file</dd>
 </dl>
 
 
@@ -762,7 +777,7 @@ Set GHES topology configuration by providing an INI-style configuration string. 
 ### Examples
 
 ```bash
-$ gh es topologyconfig set --config "$(cat <path-to-config-file>)"
+$ gh es topologyconfig set --config /data/user/common/cluster.conf"
 ```
 
 ## gh es topologyconfig verify
@@ -771,14 +786,14 @@ $ gh es topologyconfig set --config "$(cat <path-to-config-file>)"
 gh es topologyconfig verify [flags]
 ```
 
-Verify GHES topology configuration by providing an INI-style configuration string. This command will not apply or upload the configuration.
+Verify GHES topology configuration by providing a path to the cluster configuration file. This command will not apply or upload the configuration.
 
 ### Options
 
 
 <dl class="flags">
 <dt><code>-c</code>, <code>--config &lt;string&gt;</code></dt>
-<dd>Verify topology by providing string in INI-style</dd>
+<dd>path to the cluster configuration file</dd>
 </dl>
 
 
@@ -794,7 +809,7 @@ Verify GHES topology configuration by providing an INI-style configuration strin
 ### Examples
 
 ```bash
-$ gh es topologyconfig verify --config "$(cat <path-to-config-file>)"
+$ gh es topologyconfig verify --config /data/user/common/cluster.conf
 ```
 
 ## gh es topologyconfig diff
@@ -803,14 +818,14 @@ $ gh es topologyconfig verify --config "$(cat <path-to-config-file>)"
 gh es topologyconfig diff [flags]
 ```
 
-Compares the existing GHES topology configurations with a provided INI-style configuration string. This command will not apply or upload the configuration.
+Compares the existing GHES topology configurations with a provided cluster configuration file. This command will not apply or upload the configuration.
 
 ### Options
 
 
 <dl class="flags">
 <dt><code>-c</code>, <code>--config &lt;string&gt;</code></dt>
-<dd>Compares the existing topology against the provided config</dd>
+<dd>path to the cluster configuration file</dd>
 </dl>
 
 
@@ -826,7 +841,7 @@ Compares the existing GHES topology configurations with a provided INI-style con
 ### Examples
 
 ```bash
-$ gh es topologyconfig diff --config "$(cat <path-to-config-file>)"
+$ gh es topologyconfig diff --config /data/user/common/cluster.conf
 ```
 
 ## gh es checks system-requirements
@@ -846,6 +861,35 @@ Check if the configured cluster nodes meet the minimum system requirements in te
 
 <dt><code>-e</code>, <code>--external_hostname &lt;string&gt;</code></dt>
 <dd>(Optional) Provide a hostname to reach the cluster</dd>
+</dl>
+
+
+### Options inherited from parent commands
+
+
+<dl class="flags">
+<dt><code>--json</code></dt>
+<dd>Format results as JSON</dd>
+</dl>
+
+
+## gh es checks connectivity
+
+```
+gh es checks connectivity [flags]
+```
+
+Check if esstential ports are reachable on the cluster nodes.
+
+### Options
+
+
+<dl class="flags">
+<dt><code>-c</code>, <code>--cluster_config &lt;string&gt;</code></dt>
+<dd>(Optional) Provide path for cluster config file. Defaults to the current cluster topology</dd>
+
+<dt><code>-t</code>, <code>--timeout &lt;string&gt;</code></dt>
+<dd>(Optional) Provide a timeout for the check. Defaults to 60</dd>
 </dl>
 
 
