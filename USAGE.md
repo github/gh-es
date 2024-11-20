@@ -42,6 +42,9 @@ Configures the CLI to be able to connect with the Manage GitHub Enterprise Serve
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -78,6 +81,9 @@ Ping the GitHub Enterprise Server instance and verify the stored API credentials
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -108,6 +114,9 @@ In the case that the CLI is currently configured using the root site administrat
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -131,6 +140,9 @@ Get SSH keys from the authorized_keys file on all configured nodes.
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -167,6 +179,9 @@ Add SSH key to the authorized_keys file on all configured nodes.
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -206,6 +221,9 @@ Remove SSH key from the authorized_keys file on all configured nodes.
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -248,6 +266,9 @@ Get the status of services running on each cluster node.
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -277,6 +298,9 @@ Bootstrap the GitHub Enterprise Server instance by initializing the configuratio
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -306,6 +330,9 @@ Get GHES metadata for all configured nodes.
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -332,6 +359,9 @@ Initiate a config-apply run on all configured nodes.
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -371,6 +401,9 @@ Check config apply status on all configured nodes.
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -419,6 +452,9 @@ Check config apply events on all configured nodes.
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -452,6 +488,9 @@ Display the license information. Provide information about topology, seat counts
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -469,6 +508,9 @@ Check the license information. Perform various checks like expiration date, topo
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -498,6 +540,9 @@ Import a new license. This does not immediately apply the license to the GitHub 
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -524,6 +569,9 @@ Get current settings of the GitHub Enterprise Server instance, which are ready t
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -553,6 +601,9 @@ Update a subset or all of GHES settings in preparation to applying them.
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -601,6 +652,9 @@ Configure the maintenance mode on all configured or specific UUID-identified  no
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -652,6 +706,9 @@ Check maintenance status on all configured nodes.
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -694,6 +751,9 @@ Get GHES version for all configured nodes.
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -726,6 +786,9 @@ Show replication status for each replication channel to the primary.
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -743,6 +806,9 @@ Get topology configuration from the GHES instance in INI style.
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -769,6 +835,9 @@ Set GHES topology configuration by providing a path to the cluster configuration
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -801,6 +870,9 @@ Verify GHES topology configuration by providing a path to the cluster configurat
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -833,6 +905,9 @@ Compares the existing GHES topology configurations with a provided cluster confi
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -868,6 +943,9 @@ Check if the configured cluster nodes meet the minimum system requirements in te
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
@@ -897,6 +975,9 @@ Check if esstential ports are reachable on the cluster nodes.
 
 
 <dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
 <dt><code>--json</code></dt>
 <dd>Format results as JSON</dd>
 </dl>
