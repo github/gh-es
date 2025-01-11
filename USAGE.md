@@ -846,7 +846,7 @@ Set GHES topology configuration by providing a path to the cluster configuration
 ### Examples
 
 ```bash
-$ gh es topologyconfig set --config /data/user/common/cluster.conf"
+$ gh es topologyconfig set --config /data/user/common/cluster.conf
 ```
 
 ## gh es topologyconfig verify
