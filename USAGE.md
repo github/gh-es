@@ -464,16 +464,16 @@ Check config apply events on all configured nodes.
 
 ```bash
 # Check config-apply events on all nodes.
-$ gh es config get-apply-events"
+$ gh es config get-apply-events
 
 # Check config-apply events on a specific node identified by its UUID (node metadata can be retrieved with 'gh es config metadata').
-$ gh es config get-apply-events" --uuid 12345678-1234-1234-1234-123456789012
+$ gh es config get-apply-events --uuid 12345678-1234-1234-1234-123456789012
 
 # Check config-apply events on all nodes with a specific cluster role.
-$ gh es config get-apply-events" --cluster-role WebServer
+$ gh es config get-apply-events --cluster-role WebServer
 
 # Check config-apply events on all nodes with a specific evnt id.
-$ gh es config get-apply-events" --event-id 12345678
+$ gh es config get-apply-events --event-id 12345678
 ```
 
 ## gh es config get-license
