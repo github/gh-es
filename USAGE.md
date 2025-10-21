@@ -27,6 +27,9 @@ Configures the CLI to be able to connect with the Manage GitHub Enterprise Serve
 <dt><code>-p</code>, <code>--password &lt;string&gt;</code></dt>
 <dd>Password to authenticate with</dd>
 
+<dt><code>-P</code>, <code>--port &lt;int&gt;</code></dt>
+<dd>Custom port for the GHES API (default 8443). Only set this if the default management port is inaccessible, e.g. behind a bastion host.</dd>
+
 <dt><code>-r</code>, <code>--reset</code></dt>
 <dd>Use to reset and delete the currently configured CLI credentials locally</dd>
 
@@ -58,6 +61,9 @@ $ gh es configure
 
 # Configure the CLI and provide credentials as flags
 $ gh es configure --hostname ghes.github.net --auth-type "root site administrator" --password passworD1
+
+ # Configure the CLI and provide a custom port
+$ gh es configure --hostname ghes.github.net --port 9443 --auth-type "root site administrator" --password passworD1
 
 # View the current status of the local CLI configuration and verify the connection
 $ gh es configure --status
