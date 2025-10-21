@@ -24,11 +24,10 @@ gh extension install github.com/github/gh-es --pin v3.17.0
 
 The following versions of GHES are supported by this CLI. Please refer to the [USAGE](./USAGE.md) for more information on how to use the CLI commands of each release.
 
-* [3.13](https://github.com/github/gh-es/blob/3.13/README.md)
 * [3.14](https://github.com/github/gh-es/blob/3.14/README.md)
 * [3.15](https://github.com/github/gh-es/blob/3.15/README.md)
 * [3.16](https://github.com/github/gh-es/blob/3.16/README.md)
-* [3.17](https://github.com/github/gh-es/blob/main/README.md)
+* [3.17](https://github.com/github/gh-es/blob/3.17/README.md)
 
 ## Usage
 
