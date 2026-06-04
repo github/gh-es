@@ -994,7 +994,7 @@ Check if esstential ports are reachable on the cluster nodes.
 gh es upgrade
 ```
 
-Manage upgrades on GitHub Enterprise Server instances. Upgrades proceed through two phases: the pre-upgrade phase validates and prepares the environment, while the upgrade phase applies the new version. Both phases can be run independently or together as a full upgrade.
+Manage upgrades on GitHub Enterprise Server instances version 3.22.0 and later. Upgrades proceed through two phases: the pre-upgrade phase validates and prepares the environment, while the upgrade phase applies the new version. Both phases can be run independently or together as a full upgrade.
 
 > [!IMPORTANT]
 > Before beginning an upgrade, back up your data with [GitHub Enterprise Server Backup Utilities](https://github.com/github/backup-utils#readme) and schedule a maintenance window.
