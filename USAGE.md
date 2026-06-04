@@ -1123,19 +1123,18 @@ Download an upgrade package to all configured nodes of a GitHub Enterprise Serve
 
 <dl class="flags">
 <dt><code>--version &lt;string&gt;</code></dt>
-<dd>Version of the upgrade package to download</dd>
-
+<dd>Version of the upgrade package to download (omit to download the latest available version)</dd>
 <dt><code>--force</code></dt>
 <dd>Force re-download even if the package already exists</dd>
 
 <dt><code>--batch-size &lt;int&gt;</code></dt>
-<dd>Maximum number of nodes to download to concurrently. Defaults to 0 (all nodes)</dd>
+<dd>Maximum number of nodes to download to concurrently. Defaults to 0 (no limit; download to all nodes concurrently)</dd>
 
 <dt><code>--poll-interval &lt;duration&gt;</code></dt>
 <dd>Polling interval for batched downloads (default: 30s)</dd>
 
 <dt><code>--batch-timeout &lt;duration&gt;</code></dt>
-<dd>Maximum time to wait for one node download before marking it stuck (default: 1h)</dd>
+<dd>Maximum time to wait for one node download before marking it as stuck (default: 1h)</dd>
 
 <dt><code>--max-attempts &lt;int&gt;</code></dt>
 <dd>Maximum number of download attempts per node for batched downloads (default: 1)</dd>
