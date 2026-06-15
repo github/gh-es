@@ -28,7 +28,7 @@ Configures the CLI to be able to connect with the Manage GitHub Enterprise Serve
 <dd>Password to authenticate with</dd>
 
 <dt><code>-P</code>, <code>--port &lt;int&gt;</code></dt>
-<dd>Custom port to connect to. Only set this if the actual management port (8443) is not directly accessible, e.g. behind a bastion host.</dd>
+<dd>Custom port for the GHES API (default 8443). Only set this if the default management port is inaccessible, e.g. behind a bastion host.</dd>
 
 <dt><code>-r</code>, <code>--reset</code></dt>
 <dd>Use to reset and delete the currently configured CLI credentials locally</dd>
@@ -535,7 +535,7 @@ Import a new license. This does not immediately apply the license to the GitHub 
 
 <dl class="flags">
 <dt><code>-a</code>, <code>--apply</code></dt>
-<dd>Whether the license import command will rebuild the github application and apply the new license</dd>
+<dd>Wheter the license import command will rebuild the github application and apply the new license</dd>
 
 <dt><code>-l</code>, <code>--license &lt;string&gt;</code></dt>
 <dd>Path to license file</dd>
