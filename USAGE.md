@@ -989,3 +989,153 @@ Check if esstential ports are reachable on the cluster nodes.
 </dl>
 
 
+## gh es upgrade apply
+
+```
+gh es upgrade apply [flags]
+```
+
+Apply an upgrade package on a GitHub Enterprise Server (GHES) node. Run the full upgrade (pre-upgrade + upgrade), or a specific phase.
+
+### Options
+
+
+<dl class="flags">
+<dt><code>--phase &lt;string&gt;</code></dt>
+<dd>Upgrade phase to run: 'pre-upgrade' or 'upgrade' (omit for full upgrade)</dd>
+
+<dt><code>-s</code>, <code>--skip-reboot</code></dt>
+<dd>Skip reboot after upgrade</dd>
+
+<dt><code>-t</code>, <code>--target-partition &lt;string&gt;</code></dt>
+<dd>Target partition for the upgrade (optional)</dd>
+
+<dt><code>-p</code>, <code>--upgrade-package-file &lt;string&gt;</code></dt>
+<dd>Path to the upgrade package file</dd>
+
+<dt><code>-u</code>, <code>--uuid &lt;string&gt;</code></dt>
+<dd>UUID of the node to run upgrade on</dd>
+
+<dt><code>--version &lt;string&gt;</code></dt>
+<dd>Target upgrade version in major.minor.patch format (e.g. 3.19.3)</dd>
+</dl>
+
+
+### Options inherited from parent commands
+
+
+<dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
+<dt><code>--json</code></dt>
+<dd>Format results as JSON</dd>
+</dl>
+
+
+### Examples
+
+```bash
+# Run a full upgrade (pre-upgrade + upgrade phases)
+gh es upgrade apply --upgrade-package-file /path/to/upgrade-package.pkg
+
+# Run only the pre-upgrade phase
+gh es upgrade apply --version 3.19.3 --phase pre-upgrade
+
+# Run only the upgrade phase
+gh es upgrade apply --upgrade-package-file /path/to/upgrade-package.pkg --phase upgrade
+
+# Run a full upgrade, skipping reboot
+gh es upgrade apply --version 3.19.3 --skip-reboot
+
+# Run on a specific node by UUID (for HA/cluster environments)
+gh es upgrade apply --upgrade-package-file /path/to/upgrade-package.pkg --uuid <node-uuid>
+
+# Run with a specific target partition (optional)
+gh es upgrade apply --version 3.19.3 --target-partition /dev/sda2
+```
+
+## gh es upgrade status
+
+```
+gh es upgrade status [flags]
+```
+
+Get the upgrade status from all configured nodes of a GitHub Enterprise Server (GHES) instance.
+
+### Options
+
+
+<dl class="flags">
+<dt><code>-u</code>, <code>--uuid &lt;string&gt;</code></dt>
+<dd>UUID of the node to get upgrade status from</dd>
+
+<dt><code>-v</code>, <code>--verbose</code></dt>
+<dd>Show detailed step information</dd>
+</dl>
+
+
+### Options inherited from parent commands
+
+
+<dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
+<dt><code>--json</code></dt>
+<dd>Format results as JSON</dd>
+</dl>
+
+
+### Examples
+
+```bash
+# Get upgrade status from all nodes
+gh es upgrade status
+
+# Get upgrade status from a specific node by UUID (for HA/cluster environments)
+gh es upgrade status --uuid <node-uuid>
+
+# Get upgrade status with detailed step information
+gh es upgrade status --verbose
+```
+
+## gh es upgrade download status
+
+```
+gh es upgrade download status [flags]
+```
+
+Get upgrade package download and distribution status from a GitHub Enterprise Server (GHES) instance.
+
+### Options
+
+
+<dl class="flags">
+<dt><code>-u</code>, <code>--uuid &lt;string&gt;</code></dt>
+<dd>UUID of the node to get download status from</dd>
+</dl>
+
+
+### Options inherited from parent commands
+
+
+<dl class="flags">
+<dt><code>--address &lt;string&gt;</code></dt>
+<dd>The address of the GHES server</dd>
+
+<dt><code>--json</code></dt>
+<dd>Format results as JSON</dd>
+</dl>
+
+
+### Examples
+
+```bash
+# Get upgrade package download status from all nodes.
+$ gh es upgrade download status
+
+# Get upgrade package download status from a specific node by UUID.
+$ gh es upgrade download status --uuid <node-uuid>
+```
+
