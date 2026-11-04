@@ -29,7 +29,6 @@ The following versions of GHES are supported by this CLI. Please refer to the [U
 * [3.20](https://github.com/github/gh-es/blob/3.20/README.md)
 * [3.21](https://github.com/github/gh-es/blob/3.21/README.md)
 * [3.22](https://github.com/github/gh-es/blob/3.22/README.md)
-* [3.23](https://github.com/github/gh-es/blob/main/README.md)
 
 ## Usage
 
